@@ -14,7 +14,6 @@ deploy:
     context: eeshaachakala1/DEV
     type: statefulset
     replicas: 1
-    ingress: none
     port:
     - 8200
     - 80
@@ -30,6 +29,6 @@ volumes:
     size: 5Gi
 
 properties:
-    revision: 55
+    revision: 56
     ENABLE_AUTO_PASSWORD: True
     
