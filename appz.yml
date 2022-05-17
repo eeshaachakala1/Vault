@@ -23,10 +23,12 @@ volumes:
     mount: /appz/home
     name: home
     size: 5Gi
+    class: microk8s-hostpath
   - claim: vault-data
     mount: /appz/data
     name: data
     size: 5Gi
+    class: microk8s-hostpath
 
 properties:
     revision: 57
