@@ -5,13 +5,13 @@ app:
 
 build:
     version: 0.4
-    env: DEV
+    env: QA
     build_file: none
     output_files: output/*.zip
     image_template: vault-1.2
 
 deploy:
-    context: eeshaachakala1/DEV
+    context: eeshaachakala1/QA
     type: statefulset
     replicas: 1
     port:
@@ -29,6 +29,6 @@ volumes:
     size: 5Gi
 
 properties:
-    revision: 59
+    revision: 60
     ENABLE_AUTO_PASSWORD: True
     
